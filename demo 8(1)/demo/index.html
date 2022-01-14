@@ -1,0 +1,631 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta charset="utf-8" />
+<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script src="assets/js/echarts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-gem"></span>
+				
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>40%的隐形人：中职生路在何方？</h1>
+					<!-- <p>A fully responsive site template designed by <a href="#">HTML5 UP</a> and released<br />
+					for free under the <a href="#">Creative Commons</a> license.</p> -->
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">沉默的40%</a></li>
+					<li><a href="#work">沉默之因</a></li>
+					<li><a href="#about">沉默之困</a></li>
+					<li><a href="#contact">沉默以后</a></li>
+					 <li><a href="#elements">结语</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+				<article id="intro">
+					<h2 class="major">一、沉默的40%：隐形的中职生</h2>
+					<span class="image main"><img src="images/img1.jpg" alt="" /></span>
+					<p>2021年夏，“北京将实行5：5普职分流”的消息引发了家长们对于“中职焦虑”的讨论。在大多数人的观念中，职校往往被视为“学生考不上高中”不得已的选择，念职校意味着不明朗的未来和前途。</p>
+
+					
+					
+
+					<div class="mainsec">
+						<div class="leftside">
+							<div id="chart1" style="width: 600px;height:400px;"><p>（注：排除成人初中、成人高中、成人中专学生）</p></div>
+							<script type="text/javascript">
+								// 基于准备好的dom，初始化echarts实例
+								var myChart = echarts.init(document.getElementById('chart1'));
+								var option = {
+									series : [
+										{
+											name: '',
+											type: 'pie',    // 设置图表类型为饼图
+											radius: '40%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
+											data:[          // 数据数组，name 为数据项名称，value 为数据项值
+												{value:272.7, name:'普通中专'},
+												{value:158.4, name:'职业高中'},
+												{value:160.1, name:'技工学校'},
+												{value:876.4, name:'普通高中'},
+												{value:67.7, name:'其他'},
+											]
+										}
+									]
+								}
+								myChart.setOption(option)
+							</script>
+							<!--  <div class="flourish-embed flourish-chart" data-src="visualisation/8359123"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
+							
+						</div>
+						<div class="rightside">
+							<p>然而，“被分流”的人不在少数。2020年，高中阶段在校生中有38.33％的学生就读于中职学校（包含中专、技校、职校），高达1550.69万人。在同年的初中毕业生中，有39％的学生选择了中职。自2014年起，选择普高与职高的初中毕业生稳定在6：4的比例。</p>
+							
+							
+						</div>
+					</div>
+					
+
+					<div class="mainsec2" id = 's4'>
+						<div class="leftside">
+							<p>回顾近二十年的高中阶段教育，在校中职生的比重从2000年的47％开始下降，到2003年后有所增长，但仍不到半数。近五年来，中职生比例一直保持在38％上下。</p>
+						</div>
+						<div class="rightside">
+							<div class="flourish-embed flourish-chart" data-src="visualisation/8359058"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+						</div>
+					</div>
+					<p>我们所说的中职生，实际上来自于三类学校：普通中专、技工学校和职业高中。三者的基本学制均为三年，但在学历证明、课程重心、升学渠道和学校名称上存在不同。</p>
+					<p>在学历证明上，职业高中和普通中专归教育部门管理，学生毕业时颁发中专学历证明，与高中学历相当。而技工学校归属人力资源和社会保障部门管理，毕业证书无法判定学历。即使2016年印发的《技工教育“十三五”规划》曾明确技工院校的中级技工相当于中专学历并落实相关待遇，在实际情况中，技校毕业证书的通常不具有学历证明作用。</p>
+					<p>在课程目标中，三类中职学校都将职业技术作为重心，在高中文化知识教育的同时，有针对性地实施职业知识教育和职业技能训练，培养技能型人才和高素质劳动者。据公开数据，我国有1.13万所职业院校、3088万名在校生，在现代制造业、战略性新兴产业和现代服务业等领域，一线新增从业人员70%以上来自职业院校。</p>
+					
+					
+					<div class="mainsec" >
+						<div class="leftside">
+							<div id="chart3" style="width: 600px;height:400px;"></div>
+							<script type="text/javascript">
+								// 基于准备好的dom，初始化echarts实例
+								var myChart = echarts.init(document.getElementById('chart3'));
+						 
+								// 指定图表的配置项和数据
+								var option = {
+									legend: {},
+									tooltip: {},
+									dataset: {
+										// 提供一份数据。
+										source: [
+											['product', "中职","高中"],
+											['2011', 3.04, 64.682],
+											['2012', 4.587, 107],
+											['2013', 5.938,112],
+											['2014', 9.198,166],
+											['2015', 13.906,256],
+											['2016', 17.815,257],
+											['2017', 19.356,300],
+											['2018', 18.583,309],
+											['2019', 27.723,310],
+											['2020', 93.882,310],
+											['2021', 86.697,310]
+										]
+									},
+									// 声明一个 X 轴，类目轴（category）。默认情况下，类目轴对应到 dataset 第一列。
+									xAxis: {type: 'category'},
+									// 声明一个 Y 轴，数值轴。
+									yAxis: {},
+									// 声明多个 bar 系列，默认情况下，每个系列会自动对应到 dataset 的每一列。
+									series: [
+										{type: 'bar'},
+										{type: 'bar'}
+									]
+								};
+						 
+								// 使用刚指定的配置项和数据显示图表。
+								myChart.setOption(option);
+							</script>
+							<!-- <div class="flourish-embed flourish-chart" data-src="visualisation/8359185"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
+						</div>
+						<div class="rightside" id="s2">
+							<p>不过。似乎，直到国家宣布中考要实行“五五分流”，我们才开始关注“中职”这个庞大的群体。根据慧科新闻搜索研究数据库的结果，近十年来，每年提及中职的新闻报道甚至不足高中的一半。</p>
+						</div>
+					</div>
+
+					<div class="mainsec2">
+						<div class="leftside">
+							<p>微博热搜榜也呈现了同样的情形。2021全年，中职、中专、职高等表述在热搜上一共出现了8次，平均1.5个月一次，合计1192分钟。而“高中”则霸榜热搜109次，平均约3天上一次热搜，合计近20000分钟。</p>
+							<p>“高中”出现的时间约是“中职”的16倍。多出的时间，足够一个初三学生参加154次数学中考。</p>
+						</div>
+						<div class="rightside">
+							<img src='images/Picture2.png' height="300" width="460">
+						</div>
+					</div>
+					<p>“中职生”，似乎真的是这个社会里“沉默的大多数”。</p>
+					<h4>点击两侧空白返回</h4>
+					<!-- <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
+					<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p> -->
+				</article>
+
+			<!-- Work -->
+				<article id="work">
+					<h2 class="major">二、沉默之因：“被”成为中职生</h2>
+					<span class="image main"><img src="images/img2.jpg" alt="" /></span>
+					<p>《正面连接》采访了一位来自某国家级贫困县的中职生，写道：“她对初中的下一环是什么没概念，每天放学后先干活，闲下来就玩，也不写作业。直到中考那天第一次到县城，看到横幅上的励志标语她才明白‘原来高中是要考的’。”</p> 
+					<p>中职生不仅是中考分数不达标而已，它往往能折射一个人的出身。2017年，中国发展研究基金会跟踪研究了广东、四川、贵州三省30所中等职业学校，他们发现：70%的中职生都来自于农村。《正面连接》所报道的故事并不在少数。</p> 
+					<p>张誉明是张家港第三职业高级中学的一位班主任，她坦言：</p>
+					<blockquote>“（班上同学）大部分都是工人家庭，家长在工厂里上班。”</blockquote>
+					<p>蔡邵瑜也就读于这所中职学校，学习机械专业。她说：</p>
+					<blockquote>“爸妈就从事机械行业，工作也比较忙，基本没有时间来管我学习。”</blockquote>
+					<p>父母一般在深夜十一点左右下班，蔡邵瑜和她们几乎没有交流。即便是班主任希望找蔡邵瑜的家长谈话，她有时也可以用“爸妈很忙”的理由搪塞过去。</p>
+					<p>在英国学者保罗·威利斯的著作《学做工：工人阶级子弟为何子承父业》中，英国工人阶级子弟们从父母处耳濡目染到了“重实践、轻文凭；重经验，轻知识”的价值观，而正是这种文化使他们失去了从事中产工作的资格。</p>
+					<p>这样的故事在中国也以类似的方式上演着。回顾入学的第一学期，蔡邵瑜觉得文化课“都是以前学过的东西，课堂纪律也不好”，反倒是“锉铁、削铁”这些实践活动，可以算得上是这半年的“收获”。蔡邵瑜说，父母对她文化成绩要求很低，甚至允许文化课“稍微差一点”，但也嘱咐她，要“在自己的专业课上更花一点时间”，努力练好一门手艺。</p>
+					<p>学校帮蔡邵瑜规划：念完三年、通过学测，就可以让她去念常州的一所大专。她梦想自己最好能“专升本”，但她对此“一无所知”。她的生活目标是“有房有车有存款”，但“暂时还没考虑过以后的工作和收入”。</p>
+					<p>王高雅也是张家港第三职业高级中学的学生。她想要学好一门技术，可以在找工作时傍身；想要顺利去大专、专升本，“提升学历是很多同学的梦想”；想要去追逐她的音乐梦想，打算毕业后报一个培训班……</p>
+					<p>威利斯认为，</p>
+					<blockquote>这些孩子即便想跳脱出“做工人”的命运，也往往缺乏长远的规划。就像《学做工》里讲得那样：“计划‘有一天’开始自己做生意，但他们就这么日复一日地工作了三十年。”</blockquote>
+					<p>保罗·威利斯说：“正是那些孩子自己的文化，最为有效地让部分工人阶级子弟准备好以体力劳动的方式出卖劳动力。”中职生不仅是社会上鲜有人问津的“40%”；用文化的视角看，这一社会群体是在他们父辈的价值观中被“复制”出来的。</p>
+					<h4>点击两侧空白返回</h4>
+					<!-- <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+					<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p> -->
+				</article>
+
+			<!-- About -->
+				<article id="about">
+					<h2 class="major">三、沉默之困？中职生可能阶层跃迁吗？</h2>
+					<span class="image main"><img src="images/img3.png" alt="" /></span>
+					<p>2020年末，“你有学历焦虑吗”的话题登上热搜，其中不乏一些中专、大专文凭的网友，在为自己的学历惆怅、焦虑与自卑。专科生似乎就和社会底层画上了等号。</p>
+					<img src='images/Picture3.png' height="580" width="840"> 
+					<p></p>
+					
+					<div class="mainsec2">
+						<div class="leftside">
+							<p>念了中专，未来究竟如何？</p>
+							<p>中职毕业生毕业去向主要有直接就业（企事业单位、个体户、其他方式就业）、升学、未就业未升学三种情况。2019 年《中国中等职业学校毕业生就业状况分析报告》显示，2019 年毕业的中职毕业生，49% 直接就业，48% 继续升学。其中，以“其他方式就业”的比例为16.41%</p>
+							
+						</div>
+						<div class="rightside">
+							<p><img src='images/3.png' height="500" width="460"> </p>
+						</div>
+					</div>
+
+					<div class="mainsec">
+						<div class="leftside">
+							<div class="flourish-embed flourish-chart" data-src="visualisation/8364761"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+						</div>
+						<div class="rightside">
+							<p>在就业方面，一般情况下，学校会与企业合作，给学生推荐就业机会。三联的报道称，好的职校通常会与多家企业建立“企教融合”，成立一个非实体但联系紧密的集团，安排顶岗实习。实习是中职学生毕业的必经之路，不进工厂，就毕不了业。</p>
+						</div>
+					</div>
+					
+					<p>以张家港市第三职业高级中学为例，学校以往采取一种“订单式培养模式”，和企业集团保持合作合作。但随着自动化发展，企业对中职生的需求量减少。为了提高中职毕业生的就业率，张家港市第三职业高级中学采取了新型“学徒制”的培养方案。按照计划，“学徒们”最后一年需要前往企业实习，经由企业与学生的双向选择后，学生才能拿到就业岗位。</p>
+					<div class="mainsec2">
+						<div class="leftside">
+							<p>此外，中职生的就业稳定率不容乐观。2021年3月，《教育家》杂志联合相关教科院发布的《中国职业教育发展大型问卷调查报告》显示，职业院校学生毕业后就业稳定率不高。仅有23.88%的学生一年内就业稳定率在80%以上，有36.34%的学生对自己一年内是否稳定就业并不了解。</p>
+						</div>
+						<div class="rightside">
+							<div id="main1" style="width: 600px;height:400px;"></div>
+							<script type="text/javascript">
+								// 基于准备好的dom，初始化echarts实例
+								var myChart = echarts.init(document.getElementById('main1'));
+								var option = {
+									series : [
+										{
+											name: '',
+											type: 'pie',    // 设置图表类型为饼图
+											radius: '35%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
+											data:[          // 数据数组，name 为数据项名称，value 为数据项值
+												{value:23.88, name:'稳定率80%以上'},
+												{value:27.62, name:'稳定率60%-80%'},
+												{value:12.16, name:'稳定率60%以下'},
+												{value:36.34, name:'不了解'},
+											]
+										}
+									]
+								}
+								myChart.setOption(option)
+							</script>
+							<!-- <div class="flourish-embed flourish-chart" data-src="visualisation/8365499"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
+						</div>
+					</div>
+					
+					
+					<div class="mainsec">
+						
+					<p>张家港第三职业高级中学就业中心的吴主任坦言:</p>
+					<blockquote>毕业生中对工作选择不满意的情况普遍存在，参考他们2019年统计的情况，毕业生参加工作后一年内离职的比例高达60%。</blockquote>
+					</div>
+
+					<div class="mainsec">
+						<div class="leftside">
+							<div class="flourish-embed flourish-chart" data-src="visualisation/8365252"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+						</div>
+						<div class="rightside">
+							<p>就业不稳定折射的是尴尬的起薪。《中国中等职业学校毕业生状况分析报告》显示：中职毕业生直接就业后，普遍拿到的工资在2001-3000元间，这一群体占比为 40.53%。麦可思研究院根据调查估算，2019 届高职毕业生平均月收入约 4295 元，本科毕业生平均月收入约为 5440 元。而中职毕业生的工资，远低于高职与本科。</p>
+						</div>
+					</div>
+					
+					<div class="mainsec2">
+						<div class="leftside">
+							<p>张家港第三职业高级中学的就业中心也统计了2020届588名就业学生的薪资水平。绝大多数学生都在2000-3500元之间。</p>
+						</div>
+						<div class="rightside">
+							<div class="flourish-embed" data-src="visualisation/8365584"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+						</div>
+					</div>
+
+					<div class="mainsec">
+						<div class="leftside" id="s5">
+							<p><img src='images/4.jpg' height="540" width="400"> </p>
+						</div>
+						<div class="rightside" id="s6">
+							<p>事实上，为提升工资水平和增强技能，大量的中职毕业生积极寻求继续提高学历的机会。不少中职学校都以升学为取向，依托“五年一贯制”“职教高考”等渠道，获得全日制大专/本科学历，在《教育家》杂志的调研报告中，有的中职学校学生就业率不到 10%。</p>
+						</div>
+					</div>
+
+					
+					
+					<p>一些学者探究了中职生困境的背后原因。孙丽虹在论文《职业教育发展中的问题及其成因分析》中批评了并未真正建立起来的校企合作模式。在现实中，企业参与职业教育的积极性不高，多数校企合作关系的建立和维系主要靠“关系和信誉”，长效机制没有建立起来。</p>
+					<p>这一问题的背后，指向了中职生尴尬的处境：</p>
+					<p>中职生的核心竞争力在哪里？</p>
+					<p>孙丽虹认为</p>
+					<blockquote>中职教学的培养模式不尽合理，并不能突出职业教育的职业性、技术性。</blockquote>
+					<p>在张家港三职，实践水平的考核方式和理论一样。学生需要按照试卷要求，把实践中学到的产品“做”出来。“做”产品实际上是“按照要求假设”，在纸上把产品“加工”出来，然后老师根据所“加工”产品“质量”的好坏来评定学生成绩。实践课程最终成为一种“纸上谈兵”。 </p>
+					<p>2008年，教育部正式提出将“职业教育技能大赛”制度化。南京师范大学方健华博士在论文《中职学生职业核心素养评价及其标准体系建构研究》中认为，地方政府在政绩锦标赛的鼓动下，夸大了技能大赛的考核价值：仅关注参赛内容的掌握程度和技能熟练水平，特别是获奖金牌的多少。其结果是学生在“应试”和“应赛”的夹缝里失去竞争力。</p>
+
+					<p>方健华认为，中职学生即便是在工厂，也存在职业素养欠缺，缺少终身学习、不断进步的精神。他们的爱岗敬业的素质也较差，对工作、对社会没有责任感和奉献精神，毕业后难以胜任工作。而这些素质，是该由中职学校培养起来的。
+					<p>面对当前职业教育学生评价的“现实之殇”，方健华总结道：</p>
+					<p>我们期望中等职业教育培养高素质、技能型劳动者和技术应用型人才，而我们当下中职校的学生评价却将学生培养与发展引向一条狭窄的死胡同——在这条路上踢跚践涉。</p>
+					<p>要么靠的是专业知识的机械记忆和积累，模仿普高生冲击对口高考的独木桥；要么靠的是操作技能的反复训练，模仿的是企业技工培训冲击证书考级；</p>
+					<p>也有极少数的幸运儿，被学校老师选中，作为技能大赛的种子选手参加学校组织的强化集训，结果是完全异化为竞赛的高手而实际的严重片面发展者。</p>
+					<p>而企业和社会用人单位迫切期望中职毕业生所必须具备的职业理想信念、职业道德人格、职业基本意识、职业关键能力等综合职业素养则完全被边缘化，甚至被完全忽略了。</p>
+					<p>这或许不仅仅是中职的问题。随着“内卷”成为网络热词，本科、硕士，也在升学、就业、薪资的痛苦泥泞里挣扎。</p>
+					<blockquote>“中职学历水平较低，中职学生就业文凭缺乏社会竞争力。随着我国高校招生由过去的精英教育转成现在的大众教育，人才市场上本科生规模日趋壮大，硕士研究生数量递增，甚至博士生也不再罕见，用人单位招聘门槛也“水涨船高”，要求“本科以上学历”，中职学生往往被拒绝，大大缩小了他们的工作选择范围。”</blockquote>
+					<p>李洪荣在《江苏高教》中谈及职业教育身份受到的学历歧视。</p>
+					<p>21世纪教育研究院院长熊丙奇认为:</p>
+					<blockquote>教育的过度与浪费“标签化”了中职生的身份。“学历不高”被赋予了“能力低下”“价值不大”这样的意涵。文凭社会的评价体系和标签化导致很多学生的学业发展规划和职业发展规划受到影响。更“极端”的观点来自法国学者布尔迪厄。在他眼里，教育本身就是将阶级不平等延续下去的机制。</blockquote>
+					<p>对教育的批判，对文凭的反思纵然犀利，但社会确实需要筛选人才的标准。天地之大，中职生会有自己的容身之处吗？</p>
+					<h4>点击两侧空白返回</h4>
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p> -->
+				</article>
+
+			<!-- Contact -->
+				<article id="contact">
+					<h2 class="major">四：沉默以后：中职路在何方？</h2>
+					<span class="image main"><img src="images/img4.gif" alt="" /></span>
+					<p>“澎湃新闻”认为</p>
+					<blockquote>新的赛道可能意味着新的变化。“和普通高中不同，职校是将他们拉到另一条赛道上起跑”，北京工业职业技术学院副教授周咏梅告诉澎湃新闻。</blockquote>
+
+					<p>在深圳，大专的工资增长率已达到268%，甚至略高于本科（250%）。</p>
+					<p>截止到2020年，大专的工资平均指导价位已经接近10000元，本科生也不超过12000元。</p>
+					<p>根据“澎湃新闻”和“清华大学&复旦大学共同开展的劳动力市场技能缺口研究”，这些年来，我国职业技术人才，已经严重供不应求！</p>
+					
+					<div class="mainsec">
+						<div class="leftside">
+							<div class="flourish-embed flourish-cards" data-src="visualisation/8371299"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+						</div>
+						<div class="rightside">
+							<p>人才缺口倒逼国家完善制度建设。参考方建华和许丽丽两位学者的研究，建国后我国职业教育政策可以被划分为四个发展阶段：</p>
+						</div>
+					</div>
+					<p></p>
+ 
+
+					<p>总的来说，我国早已意识到职业教育发展的战略意义，中职教育政策的变动与经济发展的需要密切相关。</p>
+					<p>“一五计划”时期，我国大力发展重工业，当时政策导向为培养重工业技术人员。而当前，为了适应我国经济高质量发展、产业转型升级的趋势。2021年《关于推动现代职业教育高质量发展的意见》指出：我国现阶段的目标，就是要培养高素质的技术人才，在2035年，要基本建成技能型社会，让职业教育整体水平进入世界前列。</p>
+					<p>那么，世界范围内的职业教育是什么情况？我国在这一领域又何以如何进入世界前列水平？
+					<blockquote>世界经济合作与发展组织（OECD）发布《教育概览2020》（Education at a Glance 2020: OECD Indicators）报告（以下简称《概览》）指出，尽管职业教育的益处已受到多国经验的验证，对就业率做出了显著贡献，但大多数国家（例如我国）采用的主要培养模式还是普通教育，实际上，世界普遍采用职业教育作为主要学习方案的国家并不多。</blockquote>
+					<p>以职业教育为主要方案，当属德国的双轨制职业培训系统（ Dual VocationalTraining System）最具有代表性。这是享誉世界“德国制造”的坚实支柱，也是德国低失业率的强力保证。它最大的特点就是以企业为核心，以就业为明确导向。学生在初中毕业后开始接受职业教育，受到企业和职业学校的共同培训，分别接受实践教育和理论教育，而教学的主要阵地是企业，学校只提供服务于企业实践的理论知识。</p>
+					<p>这种培养模式下，企业得到了“定制化”的成熟员工，个人就业问题有效解决，政府人才培养的财政压力也由企业分摊。美、加、英、澳也都形成了类似的成功职业教育模式。</p>
+					<p>但“专业化的职业技能教育”和“高等教育之间”存在天然的张力。《概览》称，尽管在一些职业教育发展较好的国家与地区，拥有职业教育经历的人有很高的的就业率，但随着高等教育在新一代人群中普及度的提升，他们的就业优势会不断减弱。</p>
+					<p>由此可见，并不是将职业教育作为国家主要人才培养模式就一劳永逸。继续教育或许是一种途径，让接受职业教育的学生继续接受高等教育，有效改善其就业情况。OECD成员国中，接受过短期高等教育学历的成年人，他们的就业率比仅职高毕业的竞争者高出4个百分点，平均工资高出16%。因而我国不仅要着眼于提升职业教育的培训体制，还要为其学历提升提供途径，让中职学生们能够通过自己的努力有效提升自己的学历背景，增加就业竞争力。</p>
+					<h4>点击两侧空白返回</h4>
+				</article>
+
+			<!-- Elements -->
+				<article id="elements">
+					<h2 class="major">结语</h2>
+					<p>“焦虑”“内卷”成为这个时代的热门词，可社交媒体格外青睐的只有“中产”们的“辛苦”：他们谈论着互联网大厂加班的疲惫，青年教师发论文的困难，女白领的职场天花板。</p>
+					<p>尽管这些问题也十分严峻，但在他们下面，还有巨大的沉默的40%。他们出身大多平凡，许多人没考过高考，没碰过代码，不知道世界排名第一的大学是什么……</p>
+					<p>但中职并不代表着社会的底层。劳动力市场的缺口、国家制度的完善、地方人才引进政策的改进，学校和企业的改革……这隐形的40%，也有属于他们的未来。</p>
+					<p>在张家港第三职业高级中学，蔡邵瑜告诉我们：“听到我说我职高，初中同学里有一种唏嘘的声音就出来，就比如说啊，你怎么会去读职高，这种话就挺难过的吧。”</p>
+					<p>她说，中专和大专这个文凭，确实不好看。</p>
+					<p>她说，但如果不在张家港念书，可能一年也见不到父母几面了。</p>
+					<p>她说，她经常感到懊悔：“我成绩本来是蛮高的，就是进普高是肯定有机会的，就是在那个疫情那年嘛，不是要上网课嘛，然后就玩嘛，就把自己成绩搞烂了”。</p>
+					<p>真正减少这样的歧视，我们都还有很长的路要走。</p>
+					<h3>参考文献：</h3>
+					<p class="pclass">[1]杨运强,杨颖东,李昊宸.文凭社会的逻辑及其批判——透过文凭追逐及异化现象[J].教育学术月刊,2020(03):47-53.DOI:10.16477/j.cnki.issn1674-2311.2020.03.006.</p>
+					<p class="pclass">[2]李洪荣.高等职业教育身份歧视现象论析[J].江苏高教,2021(10):57-60.DOI:10.13236/j.cnki.jshe.2021.10.008.</p>
+					<p class="pclass">[3]孙丽虹.职业教育发展中的问题及其成因分析[J].科教导刊,2021(29):4-6.DOI:10.16400/j.cnki.kjdk.2021.29.002.</p>
+					<p class="pclass">[4]李月芳. 中职学生职业核心素养评价及其标准体系建构研究[C]//2021年基础教育发展研究高峰论坛论文集.[出版者不详],2021:1254-1255.DOI:10.26914/c.cnkihy.2021.019839.</p>
+					<p class="pclass">[5]方健华. 中职学生职业核心素养评价及其标准体系建构研究[D].南京师范大学,2014.</p>
+					<p class="pclass">[6]许丽丽. 建国后我国中等职业教育发展研究[D].东北师范大学,2009.</p>
+					<p class="pclass">[7]正面连接，《40%：“毫不重要”的中职世界》：https://mp.weixin.qq.com/s/KyBLn5XX0-8iM8hRHZKmGg</p>
+					<p class="pclass">[8]光明网，《中国职业教育发展大型问卷调查报告发布》：https://m.gmw.cn/baijia/2021-05/01/34816858.html</p>
+					<p class="pclass">[9]中国新闻周刊，《从“学历社会”到“能力社会”：这部影响3000万学子的法律首次大修》：http://www.inewsweek.cn/politics/2021-06-28/13049.shtml</p>
+					<p class="pclass">[10]澎湃新闻，《中考“分流”后，1500万中职学生就没有未来吗？ | 有数》：https://mp.weixin.qq.com/s/-YXyoY88JmLkFJ4wqCxxqw</p>
+					<p class="pclass">[11]国际与比较教育研究所，《OECD发布“教育概览2020”，聚焦职业教育》：https://www.163.com/dy/article/FM31H4I80514QKLR.html</p>
+					<p class="pclass">[12]人民网，《职业教育前途广阔、大有可为》https://mr.mbd.baidu.com/r/zAsldr9vag?f=cp&u=08d88e54dfc6ce3d</p>
+					<p class="pclass">[13]三联生活周刊，《考高分的他们，为何选择去职高？》https://mp.weixin.qq.com/s/WLzStFEAqJW66-VTFTULHw</p>
+					<p class="pclass">作者：陈俊沂、吴昊明、林凌、魏铱遥、廖欣航</p>
+					<h4>点击两侧空白返回</h4>
+				</article>
+				<article>
+					<section>
+						<h3 class="major">Text</h3>
+						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+						<hr />
+						<h2>Heading Level 2</h2>
+						<h3>Heading Level 3</h3>
+						<h4>Heading Level 4</h4>
+						<h5>Heading Level 5</h5>
+						<h6>Heading Level 6</h6>
+						<hr />
+						<h4>Blockquote</h4>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+						<h4>Preformatted</h4>
+						<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+					</section>
+
+					<section>
+						<h3 class="major">Lists</h3>
+
+						<h4>Unordered</h4>
+						<ul>
+							<li>Dolor pulvinar etiam.</li>
+							<li>Sagittis adipiscing.</li>
+							<li>Felis enim feugiat.</li>
+						</ul>
+
+						<h4>Alternate</h4>
+						<ul class="alt">
+							<li>Dolor pulvinar etiam.</li>
+							<li>Sagittis adipiscing.</li>
+							<li>Felis enim feugiat.</li>
+						</ul>
+
+						<h4>Ordered</h4>
+						<ol>
+							<li>Dolor pulvinar etiam.</li>
+							<li>Etiam vel felis viverra.</li>
+							<li>Felis enim feugiat.</li>
+							<li>Dolor pulvinar etiam.</li>
+							<li>Etiam vel felis lorem.</li>
+							<li>Felis enim et feugiat.</li>
+						</ol>
+						<h4>Icons</h4>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						</ul>
+
+						<h4>Actions</h4>
+						<ul class="actions">
+							<li><a href="#" class="button primary">Default</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary">Default</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 class="major">Table</h3>
+						<h4>Default</h4>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<h4>Alternate</h4>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h3 class="major">Buttons</h3>
+						<ul class="actions">
+							<li><a href="#" class="button primary">Primary</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button small">Small</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+							<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+						</ul>
+						<ul class="actions">
+							<li><span class="button primary disabled">Disabled</span></li>
+							<li><span class="button disabled">Disabled</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3 class="major">Form</h3>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="demo-name">Name</label>
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+								</div>
+								<div class="field half">
+									<label for="demo-email">Email</label>
+									<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@abc.com" />
+								</div>
+								<div class="field">
+									<label for="demo-category">Category</label>
+									<select name="demo-category" id="demo-category">
+										<option value="">-</option>
+										<option value="1">Manufacturing</option>
+										<option value="1">Shipping</option>
+										<option value="1">Administration</option>
+										<option value="1">Human Resources</option>
+									</select>
+								</div>
+								<div class="field half">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low</label>
+								</div>
+								<div class="field half">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High</label>
+								</div>
+								<div class="field half">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Email me a copy</label>
+								</div>
+								<div class="field half">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">Not a robot</label>
+								</div>
+								<div class="field">
+									<label for="demo-message">Message</label>
+									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="primary" /></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+						</form>
+					</section>
+
+				</article>
+
+		</div>
+
+	<!-- Footer -->
+		<footer id="footer">
+			<!-- <p class="copyright">Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p> -->
+		</footer>
+
+</div>
+
+<!-- BG -->
+<div id="bg">
+	<img src='images/img6.jpg'>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
